@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Day 3 - DOM</title>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <div>
+        <h3 id="sampleText"></h3>
+        <button onClick="displayUserInfo('Joel')">Click me!</button>
+    </div>
+
+    <form name="testForm" id="testForm">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <form name="buttonForm" id="buttonForm">
+        <label for="username">User Name</label>
+        <input type="text" name="username" id="username" placeholder="User Name">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <button type="button" onClick="submitButtonForm()">Submit Button</button>
+    </form>
+
+    <h4>Form for F1 Racer Data</h4>
+    <form name="f1RacerForm" id="f1RacerForm">
+        <label for="season">Season</label>
+        <input type="text" name="season" id="season">
+        <label for="round">Round</label>
+        <input type="text" name="round" id="round">
+        <button type="button" onClick="getJson()">Submit Info</button>
+    </form>
+
+    <h3 id="familyName"></h3>
+</body>
+</html>
